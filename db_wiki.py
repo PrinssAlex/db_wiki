@@ -20,9 +20,10 @@ def db_wiki():
     
     #establish connection, if there was a password, then you would include a password paramter for the .connect method
     conn = mc.connect(
-    user='root',
-    host='127.0.0.1',
-    database='dictapp')
+    user='',
+    host='',
+    password = '',
+    database='')
     
     #next we create a cursor instance/object which will allow us to execute sql queries.
     cur = conn.cursor()
